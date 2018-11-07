@@ -1,8 +1,8 @@
 from gpiozero import LED
 from signal import pause
 
-red = LED(17)
+led = LED(17)
 
-red.off()
+led.off()
 
 pause()
