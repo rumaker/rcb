@@ -3,6 +3,10 @@ import tensorflow as tf
 # Used tensorflow Keras to get easy Flatten command
 from tensorflow import keras
 
+import os
+from skimage import color, io, img_as_uint, img_as_float, transform
+
+
 print("1. imports complete") 
 model = keras.models.Sequential()  # a basic feed-forward model
 
@@ -29,6 +33,11 @@ model.load_weights('epic_num_reader.h5')
 print("4. keras model weights loaded") 
 print("For testing we need to load the test data")
 
+fn = "iosave2018-11-08T16:40:31.191327.png"
+imgfile = os.path.join("./testimgs", fn)
+
+img = io.imread(imgfile)
+x_test = img
 
 #mnist = keras.datasets.mnist #28x28 images of handwritte digits 0-9
 ##step 1
@@ -38,19 +47,19 @@ print("For testing we need to load the test data")
 #x_train = keras.utils.normalize(x_train, axis=1)
 #x_test = keras.utils.normalize(x_test, axis=1)
 
-xtest =
-ytest = 
+#xtest =
+#ytest = 
 
 #step 9 // predict
-predictions = model.predict(x_test)
+predictions = model.predict(np.expand_dims(x_test,axis=0))
 
 
 
 print("5. keras model prediction results") 
 print(np.argmax(predictions, axis=1))
-print(y_test)
+#print(y_test)
 
-index=100
-print(np.argmax(predictions[index]))
+#index=100
+#print(np.argmax(predictions[index]))
 
 
