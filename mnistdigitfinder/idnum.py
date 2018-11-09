@@ -6,10 +6,11 @@ import numpy as np
 import tensorflow as tf
 # Used tensorflow Keras to get easy Flatten command
 from tensorflow import keras
-from skimage import color, io, img_as_uint, img_as_float, transform
+from skimage import color, io, img_as_uint, img_as_float, transform, util
 
 parser=argparse.ArgumentParser(description = 'Get image diretory to identify number from')
 parser.add_argument('directories', nargs="+", help='list of directories to identify image data')
+parser.add_argument('-i', '--invert', action="store_true", help="Invert the greyscale conversion")
 args=parser.parse_args()
 args.directories.sort()
 print(args)
@@ -45,11 +46,15 @@ print("For testing we need to load the test data")
 #img = io.imread(imgfile)
 #
 #step 9 // predict
+filters = ""
 for directory in args.directories:
     imgfiles = glob.glob(os.path.join(directory, '*.png'))
     for imgfile in sorted(imgfiles):
         img = io.imread(imgfile)
+        if args.invert:
+            filters = "Inv"
+            img = util.invert(img)
         predictions = model.predict(np.expand_dims(img,axis=0))
-        print(np.argmax(predictions, axis=1) , ": ", imgfile)
+        print(np.argmax(predictions, axis=1) , ": ",  filters ,imgfile)
 
 
