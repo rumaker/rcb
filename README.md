@@ -3,8 +3,8 @@
 1. Set up the physical box and assemble
 2. Configure the PI with the worksheet
 3. Common Python Commands for Computer Vision
-    - GPIOZero Library for buttons 
-    - Pi Camera Library
+    * GPIOZero Library for buttons 
+    * Pi Camera Library
 4. Using the PI Camera basics no machine learning
     1. Taking Pictures with the PI
     2. Taking Pictures with a button
@@ -16,7 +16,7 @@
     * How are pixels data?
 6. Machine Learning Overview
 7. Work through the Jupyter Notebooks
-  * Intro to Keras and MNIST Digits: https://colab.research.google.com/drive/1ucL6wVcnrocsrTevYiCM8NtmkhgaWTNr
-  * Coin example:
-  * Fashion MNIST: https://colab.research.google.com/drive/1MWNk87unvcn4ZxDNTFuUFQoE9L6ow0dk
+    * Intro to Keras and MNIST Digits: https://colab.research.google.com/drive/1ucL6wVcnrocsrTevYiCM8NtmkhgaWTNr
+    * Coin example:
+    * Fashion MNIST: https://colab.research.google.com/drive/1MWNk87unvcn4ZxDNTFuUFQoE9L6ow0dk
  
