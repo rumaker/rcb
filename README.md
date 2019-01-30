@@ -22,6 +22,7 @@
      * Tensorflow
 7. Work through the Jupyter Notebooks
     * Intro to Keras and MNIST Digits: https://colab.research.google.com/drive/1ucL6wVcnrocsrTevYiCM8NtmkhgaWTNr
-    * Coin example:
+    * Coin example: https://colab.research.google.com/drive/1x5SdWXMFBbgUiDTfpSYFodXKIb5eVOKV
     * Fashion MNIST: https://colab.research.google.com/drive/1MWNk87unvcn4ZxDNTFuUFQoE9L6ow0dk
+    * Style Transfer: https://colab.research.google.com/drive/1gOSl-TE0MjevJdXlrBZXYgY6xgReVgbH
  
