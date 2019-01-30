@@ -1,10 +1,13 @@
 # rcb (Reality Capture Box)
 
 1. Set up the physical box and assemble
+
 2. Configure the PI with the worksheet
+
 3. Common Python Commands for Computer Vision
   - GPIOZero Library for buttons 
   - Pi Camera Library
+
 4. Using the PI Camera basics no machine learning
   1. Taking Pictures with the PI
   2. Taking Pictures with a button
