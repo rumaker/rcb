@@ -15,6 +15,11 @@
     * Looking at the world as data instead of pixels
     * How are pixels data?
 6. Machine Learning Overview
+   * Concepts
+   * Examples
+   * Implentation with:
+     * Keras
+     * Tensorflow
 7. Work through the Jupyter Notebooks
     * Intro to Keras and MNIST Digits: https://colab.research.google.com/drive/1ucL6wVcnrocsrTevYiCM8NtmkhgaWTNr
     * Coin example:
